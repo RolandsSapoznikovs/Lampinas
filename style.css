@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&Family=Merriweather:ital,wght@1,900&family=Permanent+Marker&family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Satisfy';
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(https://i.ytimg.com/vi/L_LUpnjgPso/maxresdefault.jpg);
+    background-size: cover;
+
+}
+
+h2{
+    font-size: 5vw;
+    animation: animate 3s ease-in-out infinite;
+}
+
+h2 span {
+    animation: happy 6s linear infinite;
+    animation-delay: calc(.05s * var(--i));
+}
+
+@keyframes animate{
+    from{
+        text-shadow: 0 0 20px white;
+    }
+    to{
+        text-shadow: 0 0 30px white,
+                    0 0 10px white;
+    }
+}
+
+@keyframes happy {
+    0% {
+       color: white;
+       filter: hue-rotate(0deg);
+       text-shadow: 0 0 10px blue,
+            0 0 20px blue,
+            0 0 40px blue,
+            0 0 80px blue,
+            0 0 160px blue,
+            0 0 320px blue,
+            0 0 480px blue,
+    }
+    
+    30% {
+        color: red;
+        filter: hue-rotate(360deg);
+        text-shadow: 0 0 10px blue,
+             0 0 20px blue,
+             0 0 40px blue,
+             0 0 80px blue,
+             0 0 160px blue,
+             0 0 320px blue,
+             0 0 480px blue,
+    }
+
+    60% {
+        color: yellow;
+        filter: hue-rotate(360deg);
+        text-shadow: 0 0 10px blue,
+             0 0 20px blue,
+             0 0 40px blue,
+             0 0 80px blue,
+             0 0 160px blue,
+             0 0 320px blue,
+             0 0 480px blue,
+    }
+    80% {
+        color: pink;
+        filter: hue-rotate(360deg);
+        text-shadow: 0 0 10px blue,
+             0 0 20px blue,
+             0 0 40px blue,
+             0 0 80px blue,
+             0 0 160px blue,
+             0 0 320px blue,
+             0 0 480px blue,
+    }
+    100% {
+        color: blue;
+        filter: hue-rotate(360deg);
+        text-shadow: 0 0 10px blue,
+             0 0 20px blue,
+             0 0 40px blue,
+             0 0 80px blue,
+             0 0 160px blue,
+             0 0 320px blue,
+             0 0 480px blue,
+    }
+
+}
+
